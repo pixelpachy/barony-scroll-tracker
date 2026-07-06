@@ -292,6 +292,45 @@
     }
 
     #kofi:hover { color: var(--accent); }
+
+    /* ── Mobile layout ─────────────────────────────────────────────────────── */
+
+    @media (max-width: 640px) {
+      .layout { flex-direction: column; }
+
+      .sidebar {
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0.5rem;
+        gap: 0.4rem;
+      }
+
+      .sidebar::-webkit-scrollbar { height: 4px; width: auto; }
+
+      .sidebar-label {
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: 0;
+        flex-shrink: 0;
+      }
+
+      .slot-item, .slot-add { flex-shrink: 0; }
+
+      .slot-item .slot-name { width: 90px; }
+
+      .scroll-select { min-width: 0; flex: 1; }
+
+      .scroll-entry {
+        grid-template-columns: 1fr;
+        justify-items: stretch;
+        gap: 0.3rem;
+      }
+    }
   </style>
 </head>
 <body>
