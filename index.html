@@ -278,6 +278,20 @@
       z-index: 99;
     }
     #toast.show { transform: translateX(-50%) translateY(0); }
+
+    /* ── Ko-fi link ────────────────────────────────────────────────────────── */
+
+    #kofi {
+      display: inline-block;
+      margin-top: 0.3rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: color 0.15s;
+    }
+
+    #kofi:hover { color: var(--accent); }
   </style>
 </head>
 <body>
@@ -285,6 +299,7 @@
 <header>
   <h1>&#x2726; Barony Scroll Tracker &#x2726;</h1>
   <p>Identify each scroll name's effect for your current seed</p>
+  <a id="kofi" href="https://ko-fi.com/pixelpachy" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
 </header>
 
 <div class="layout">
