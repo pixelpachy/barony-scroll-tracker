@@ -369,31 +369,31 @@
   // ── Constants ──────────────────────────────────────────────────────────────
 
   const SCROLL_NAMES = [
-    "ZELGO MER", "JUYED AWK YACC", "NR 9", "NOBARY ROBYAN", "PRATYAVAYAH",
-    "DAIYEN FOOELS", "LEP GEX VEN ZEA", "PRIRUTSENIE", "ELBIB YLOH",
-    "VERR YED HORRE", "VENZAR BORGAVVE", "THARR", "YUM YUM", "KERNOD WEL",
-    "ELAM EBOW", "DUAM XNAHT", "ANDOVA BEGARIN", "KIRJE", "VE FORBRYDERNE",
-    "HACKEM MUCHE", "VELOX NEB", "FOOBIE BLETCH", "TEMOV", "GARVEN DEH", "READ ME",
+    "ANDOVA BEGARIN", "DAIYEN FOOELS", "DUAM XNAHT", "ELAM EBOW", "ELBIB YLOH",
+    "FOOBIE BLETCH", "GARVEN DEH", "HACKEM MUCHE", "JUYED AWK YACC", "KERNOD WEL",
+    "KIRJE", "LEP GEX VEN ZEA", "NOBARY ROBYAN", "NR 9", "PRATYAVAYAH",
+    "PRIRUTSENIE", "READ ME", "TEMOV", "THARR", "VE FORBRYDERNE", "VELOX NEB",
+    "VENZAR BORGAVVE", "VERR YED HORRE", "YUM YUM", "ZELGO MER",
   ];
 
   const EFFECTS = [
     { value: "",               label: "— Unknown —"                        },
+    { value: "blank",          label: "Blank Scroll"                       },
+    { value: "mail",           label: "Piece of Mail"                      },
+    { value: "charging",       label: "Scroll of Charging"                 },
+    { value: "conjure_arrow",  label: "Scroll of Conjure Arrow"            },
+    { value: "destroy_armor",  label: "Scroll of Destroy Armor", danger: true },
+    { value: "enchant_armor",  label: "Scroll of Enchant Armor"            },
+    { value: "enchant_weapon", label: "Scroll of Enchant Weapon"           },
+    { value: "fire",           label: "Scroll of Fire",      danger: true  },
     { value: "food",           label: "Scroll of Food"                     },
     { value: "identify",       label: "Scroll of Identify"                 },
     { value: "light",          label: "Scroll of Light"                    },
-    { value: "teleportation",  label: "Scroll of Teleportation"            },
-    { value: "fire",           label: "Scroll of Fire",      danger: true  },
-    { value: "enchant_armor",  label: "Scroll of Enchant Armor"            },
-    { value: "enchant_weapon", label: "Scroll of Enchant Weapon"           },
+    { value: "magic_mapping",  label: "Scroll of Magic Mapping"            },
     { value: "remove_curse",   label: "Scroll of Remove Curse"             },
     { value: "repair",         label: "Scroll of Repair"                   },
-    { value: "charging",       label: "Scroll of Charging"                 },
-    { value: "destroy_armor",  label: "Scroll of Destroy Armor", danger: true },
-    { value: "magic_mapping",  label: "Scroll of Magic Mapping"            },
     { value: "summon",         label: "Scroll of Summon"                   },
-    { value: "conjure_arrow",  label: "Scroll of Conjure Arrow"            },
-    { value: "blank",          label: "Blank Scroll"                       },
-    { value: "mail",           label: "Piece of Mail"                      },
+    { value: "teleportation",  label: "Scroll of Teleportation"            },
   ];
 
   const DANGER_EFFECTS = new Set(EFFECTS.filter(e => e.danger).map(e => e.value));
